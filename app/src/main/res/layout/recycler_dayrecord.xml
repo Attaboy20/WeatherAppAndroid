@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#315020">
+
+    <TextView
+        android:id="@+id/recyclerDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#6B000000"
+        android:paddingStart="8dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/recyclerIcon"
+        android:layout_width="129dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerNightTemp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265"
+        app:srcCompat="@drawable/clear_day" />
+
+    <TextView
+        android:id="@+id/recyclerBigTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="224dp"
+        android:text="70*F/67*F"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/recyclerIcon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerDate" />
+
+    <TextView
+        android:id="@+id/recyclerConditions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Sunny"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/recyclerIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerBigTemp" />
+
+    <TextView
+        android:id="@+id/recyclerPrecip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="208dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/recyclerIcon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerConditions" />
+
+    <TextView
+        android:id="@+id/recyclerUV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/recyclerIcon"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerPrecip" />
+
+    <TextView
+        android:id="@+id/recyclerMorningTemp"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="67oF"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerUV" />
+
+    <TextView
+        android:id="@+id/recyclerAfternoonTemp"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="67oF"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/recyclerMorningTemp"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerUV" />
+
+    <TextView
+        android:id="@+id/recyclerNightTemp"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="67oF"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/recyclerEveningTemp4"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerUV" />
+
+    <TextView
+        android:id="@+id/recyclerEveningTemp4"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="67oF"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/recyclerAfternoonTemp"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerUV" />
+
+    <TextView
+        android:id="@+id/recyclerMorningText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Morning"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerMorningTemp"
+        app:layout_constraintStart_toStartOf="@+id/recyclerMorningTemp"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerMorningTemp" />
+
+    <TextView
+        android:id="@+id/recyclerAfternoonText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Afteroon"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerAfternoonTemp"
+        app:layout_constraintStart_toStartOf="@+id/recyclerAfternoonTemp"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerAfternoonTemp" />
+
+    <TextView
+        android:id="@+id/recyclerEveningText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Evening"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerEveningTemp4"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/recyclerEveningTemp4"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerEveningTemp4" />
+
+    <TextView
+        android:id="@+id/recyclerNightText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Night"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerNightTemp"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/recyclerNightTemp"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerNightTemp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
